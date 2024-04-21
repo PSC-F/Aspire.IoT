@@ -7,7 +7,6 @@
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
     <UserSecretsId>c531220a-3ebe-4ab9-943a-8a9b5f85d299</UserSecretsId>
-	  <PublishAot>true</PublishAot>
   </PropertyGroup>
 
   <ItemGroup>

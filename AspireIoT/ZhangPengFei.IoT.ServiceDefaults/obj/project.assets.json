@@ -2414,11 +2414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
+      "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
       "projectName": "ZhangPengFei.IoT.ServiceDefaults",
-      "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
+      "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
       "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\obj\\",
+      "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2442,11 +2442,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2510,7 +2505,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "包 \"OpenTelemetry.Instrumentation.AspNetCore\" 1.7.1 具有已知的 中 严重性漏洞，https://github.com/advisories/GHSA-vh2m-22xx-q94f",
+      "message": "Package 'OpenTelemetry.Instrumentation.AspNetCore' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f",
       "libraryId": "OpenTelemetry.Instrumentation.AspNetCore",
       "targetGraphs": [
         "net8.0"
@@ -2520,7 +2515,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "包 \"OpenTelemetry.Instrumentation.Http\" 1.7.1 具有已知的 中 严重性漏洞，https://github.com/advisories/GHSA-vh2m-22xx-q94f",
+      "message": "Package 'OpenTelemetry.Instrumentation.Http' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f",
       "libraryId": "OpenTelemetry.Instrumentation.Http",
       "targetGraphs": [
         "net8.0"

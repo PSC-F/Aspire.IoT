@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj": {}
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj": {
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj",
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj",
         "projectName": "ZhangPengFei.IoT.ApiService",
-        "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj",
         "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\obj\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj": {
-                "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj"
+              "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj": {
+                "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj"
               }
             }
           }
@@ -39,30 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -74,12 +55,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[8.0.2, 8.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -92,14 +67,14 @@
         }
       }
     },
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj": {
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
         "projectName": "ZhangPengFei.IoT.ServiceDefaults",
-        "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\obj\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -123,11 +98,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

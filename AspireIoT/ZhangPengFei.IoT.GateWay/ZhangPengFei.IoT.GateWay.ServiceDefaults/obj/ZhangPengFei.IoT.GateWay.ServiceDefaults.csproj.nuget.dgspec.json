@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj": {}
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj": {
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj",
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj",
         "projectName": "ZhangPengFei.IoT.GateWay.ServiceDefaults",
-        "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\obj\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -35,23 +35,12 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
-            },
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
               "version": "[8.3.0, )"
@@ -59,12 +48,6 @@
             "Microsoft.Extensions.ServiceDiscovery": {
               "target": "Package",
               "version": "[8.0.0-preview.5.24201.12, )"
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
             },
             "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
               "target": "Package",
@@ -98,12 +81,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[8.0.2, 8.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

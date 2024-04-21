@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj": {}
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj": {
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj",
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj",
         "projectName": "ZhangPengFei.IoT.SSOService",
-        "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\ZhangPengFei.IoT.SSOService.csproj",
         "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\obj\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AuthService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -35,11 +35,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -49,18 +44,6 @@
             "FreeRedis": {
               "target": "Package",
               "version": "[1.2.15, )"
-            },
-            "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -78,12 +61,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[8.0.2, 8.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

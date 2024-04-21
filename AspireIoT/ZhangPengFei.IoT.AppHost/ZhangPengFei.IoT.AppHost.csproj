@@ -6,9 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
-	  <StripSymbols>true</StripSymbols>
     <UserSecretsId>4fbc61fd-372b-45ad-82b1-9f90e402f510</UserSecretsId>
-	  <PublishAot>true</PublishAot>
   </PropertyGroup>
 
   <ItemGroup>

@@ -9093,11 +9093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Tests\\ZhangPengFei.IoT.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Tests\\ZhangPengFei.IoT.Tests.csproj",
       "projectName": "ZhangPengFei.IoT.Tests",
-      "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Tests\\ZhangPengFei.IoT.Tests.csproj",
+      "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Tests\\ZhangPengFei.IoT.Tests.csproj",
       "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Tests\\obj\\",
+      "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9115,8 +9115,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AppHost\\ZhangPengFei.IoT.AppHost.csproj": {
-              "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AppHost\\ZhangPengFei.IoT.AppHost.csproj"
+            "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AppHost\\ZhangPengFei.IoT.AppHost.csproj": {
+              "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AppHost\\ZhangPengFei.IoT.AppHost.csproj"
             }
           }
         }
@@ -9125,11 +9125,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {

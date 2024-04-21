@@ -8,7 +8,7 @@ class Program
     static async Task Main(string[] args)
     {
         // gRPC 服务的地址
-        var grpcAddress = "https://localhost:7026";
+        var grpcAddress = "https://localhost:5029";
 
         // 创建 gRPC 通道
         using var channel = GrpcChannel.ForAddress(grpcAddress);

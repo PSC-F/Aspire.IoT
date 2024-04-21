@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj": {}
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj": {
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj",
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj",
         "projectName": "ZhangPengFei.IoT.GateWay.AppHost",
-        "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\ZhangPengFei.IoT.GateWay.AppHost.csproj",
         "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\obj\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.GateWay\\ZhangPengFei.IoT.GateWay.AppHost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -35,11 +35,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -49,18 +44,6 @@
             "Aspire.Hosting.AppHost": {
               "target": "Package",
               "version": "[8.0.0-preview.5.24201.12, )"
-            },
-            "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
             }
           },
           "imports": [
@@ -74,12 +57,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[8.0.2, 8.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

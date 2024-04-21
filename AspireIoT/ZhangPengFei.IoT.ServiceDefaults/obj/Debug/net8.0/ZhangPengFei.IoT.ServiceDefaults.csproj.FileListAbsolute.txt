@@ -1,0 +1,13 @@
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\bin\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.deps.json
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\bin\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.dll
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\bin\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.pdb
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.AssemblyInfo.cs
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.sourcelink.json
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.dll
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\refint\ZhangPengFei.IoT.ServiceDefaults.dll
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ZhangPengFei.IoT.ServiceDefaults.pdb
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.ServiceDefaults\obj\Debug\net8.0\ref\ZhangPengFei.IoT.ServiceDefaults.dll

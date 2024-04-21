@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj": {}
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj": {
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj",
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj",
         "projectName": "ZhangPengFei.IoT.InitGateWayService",
-        "projectPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\ZhangPengFei.IoT.InitGateWayService.csproj",
         "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\obj\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.InitService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -35,11 +35,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,18 +54,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.62.0, )"
-            },
-            "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )",
-              "autoReferenced": true
             }
           },
           "imports": [
@@ -84,12 +67,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[8.0.2, 8.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
