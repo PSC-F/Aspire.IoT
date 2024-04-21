@@ -1,0 +1,33 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "ZhangPengFei.IoT.MQ.Common";
+// 发布
+service MessageService {
+
+    rpc PublishMessage (NormalMessage) returns (PublishResponse);
+
+    rpc SubscribeToTopic(SubscriptionRequest) returns (stream NormalMessage) {}
+}
+
+
+
+message NormalMessage {
+    string topic =1;
+    string value = 2;
+    int64 timestamp = 3;
+    int32 level = 4;
+}
+
+message PublishResponse {
+    string result = 1;
+}
+
+
+// 订阅
+
+
+message SubscriptionRequest {
+  string topic = 1;
+}
+
+

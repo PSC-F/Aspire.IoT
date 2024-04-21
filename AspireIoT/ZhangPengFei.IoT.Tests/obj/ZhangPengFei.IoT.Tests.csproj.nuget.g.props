@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\doudo\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\doudo\.nuget\packages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
+    <Import Project="$(NuGetPackageRoot)aspire.hosting.apphost\8.0.0-preview.5.24201.12\buildTransitive\Aspire.Hosting.AppHost.props" Condition="Exists('$(NuGetPackageRoot)aspire.hosting.apphost\8.0.0-preview.5.24201.12\buildTransitive\Aspire.Hosting.AppHost.props')" />
+    <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio\2.5.3\build\net6.0\xunit.runner.visualstudio.props')" />
+    <Import Project="$(NuGetPackageRoot)xunit.core\2.5.3\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.5.3\build\xunit.core.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.9.0\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.9.0\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.9.0\build\netstandard2.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.9.0\build\netstandard2.0\Microsoft.CodeCoverage.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.9.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.9.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_VisualStudio_SlnGen Condition=" '$(PkgMicrosoft_VisualStudio_SlnGen)' == '' ">C:\Users\doudo\.nuget\packages\microsoft.visualstudio.slngen\11.1.0</PkgMicrosoft_VisualStudio_SlnGen>
+    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\doudo\.nuget\packages\grpc.tools\2.60.0</PkgGrpc_Tools>
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\doudo\.nuget\packages\xunit.analyzers\1.4.0</Pkgxunit_analyzers>
+  </PropertyGroup>
+</Project>

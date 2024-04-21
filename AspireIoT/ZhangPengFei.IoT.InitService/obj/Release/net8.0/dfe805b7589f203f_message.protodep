@@ -1,0 +1,2 @@
+obj\Release\net8.0\Proto/Message.cs \
+obj\Release\net8.0\Proto/MessageGrpc.cs: Proto/message.proto
