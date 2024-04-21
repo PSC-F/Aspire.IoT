@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+	  <StripSymbols>true</StripSymbols>
+    <UserSecretsId>4fbc61fd-372b-45ad-82b1-9f90e402f510</UserSecretsId>
+	  <PublishAot>true</PublishAot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZhangPengFei.IoT.ApiService\ZhangPengFei.IoT.ApiService.csproj" />
+    <ProjectReference Include="..\ZhangPengFei.IoT.AuthService\ZhangPengFei.IoT.SSOService.csproj" />
+    <ProjectReference Include="..\ZhangPengFei.IoT.InitService\ZhangPengFei.IoT.InitGateWayService.csproj" />
+    <ProjectReference Include="..\ZhangPengFei.IoT.MQ\ZhangPengFei.IoT.MQ.csproj" />
+    <ProjectReference Include="..\ZhangPengFei.IoT.Web\ZhangPengFei.IoT.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0-preview.5.24201.12" />
+  </ItemGroup>
+
+</Project>
