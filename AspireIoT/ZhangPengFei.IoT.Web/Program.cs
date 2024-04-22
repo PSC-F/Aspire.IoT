@@ -1,12 +1,20 @@
+using Microsoft.AspNetCore.ResponseCompression;
 using ZhangPengFei.IoT.Web;
 using ZhangPengFei.IoT.Web.Components;
+using ZhangPengFei.IoT.Web.DTO;
 
 var builder = WebApplication.CreateBuilder(args);
-
+// add ant template
+// builder.Services.AddAntDesign();
+builder.Services.AddSignalR();
 // Add service defaults & Aspire components.
 builder.AddServiceDefaults();
 builder.AddRedisOutputCache("cache");
-
+builder.Services.AddResponseCompression(opts =>
+{
+    opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+        new[] { "application/octet-stream" });
+});
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
@@ -30,7 +38,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
-app.UseAntiforgery();
+
 
 app.UseOutputCache();
 
@@ -38,5 +46,11 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 app.MapDefaultEndpoints();
+
+app.UseRouting();
+app.UseAntiforgery();
+// app.MapBlazorHub();
+app.MapHub<DataHub>("dataHub");
+app.UseResponseCompression();
 
 app.Run();

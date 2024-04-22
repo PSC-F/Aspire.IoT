@@ -1,19 +1,71 @@
 ﻿@page "/counter"
 @rendermode InteractiveServer
-
+@using AntDesign.TableModels
+@using Microsoft.AspNetCore.SignalR.Client
 <PageTitle>Counter</PageTitle>
+@inject NavigationManager Navigation
+@implements IAsyncDisposable
+<div class="container overflow-auto shadow-sm p-3 mb-5 bg-white rounded" style="height: 500px;">
+    <ul id="messagesList">
+        @foreach (var message in messages)
+        {
+            <li>@message</li>
+        }
+    </ul>
+    <div class="container">
+        <div class="row">
+       
+            <div class="col-6">
+                <textarea @bind="messageInput" class="form-control" placeholder="Start typing..."></textarea>
+            </div>
+            <div class="col-3">
+                @messages.Count
+            </div>
+        </div>
+    </div>
+</div>
 
-<h1>Counter</h1>
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
+    private HubConnection? _hubConnection;
+    private List<string> messages = new List<string>();
+    private string messageInput;
+    public bool IsConnected => _hubConnection.State == HubConnectionState.Connected;
+    protected override async Task OnInitializedAsync()
     {
-        currentCount++;
+        try
+        {
+            Console.WriteLine("OnInitializedAsync");
+            _hubConnection = new HubConnectionBuilder()
+                .WithUrl(Navigation.ToAbsoluteUri("/dataHub"))
+                .Build();
+            Console.WriteLine("s1"+IsConnected);
+            _hubConnection.On<string, string>("ReceiveMessage", (topic, value) =>
+            {   Console.WriteLine("s2"+IsConnected);
+                Console.WriteLine($"{messages.Count} {topic},{value}");
+                var receivedMessage = $"[ Topic: {topic} | Value: {value} | ]";
+                messages.Add(receivedMessage);
+                InvokeAsync(StateHasChanged);
+               
+            });
+
+            await _hubConnection.StartAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
     }
+    
+    
+   
+    public async ValueTask DisposeAsync()
+    {
+        if (_hubConnection is not null)
+        {
+            Console.WriteLine("DisposeAsync");
+            // await _hubConnection.DisposeAsync();
+        }
+    }
+
 }

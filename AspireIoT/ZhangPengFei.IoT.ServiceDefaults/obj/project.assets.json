@@ -2499,27 +2499,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenTelemetry.Instrumentation.AspNetCore' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f",
-      "libraryId": "OpenTelemetry.Instrumentation.AspNetCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenTelemetry.Instrumentation.Http' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f",
-      "libraryId": "OpenTelemetry.Instrumentation.Http",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

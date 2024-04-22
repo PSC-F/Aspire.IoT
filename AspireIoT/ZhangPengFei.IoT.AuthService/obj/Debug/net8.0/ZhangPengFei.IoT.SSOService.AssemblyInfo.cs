@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZhangPengFei.IoT.SSOService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33b490541f9d3c46cbca80863c6ad2657a104a33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23300a42fa7f79d85b4166abac5da049a695e281")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZhangPengFei.IoT.SSOService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZhangPengFei.IoT.SSOService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

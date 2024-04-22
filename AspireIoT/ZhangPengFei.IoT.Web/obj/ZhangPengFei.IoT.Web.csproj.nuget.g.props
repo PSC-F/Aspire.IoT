@@ -14,5 +14,6 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props')" />
+    <Import Project="$(NuGetPackageRoot)antdesign\0.18.3\buildTransitive\AntDesign.props" Condition="Exists('$(NuGetPackageRoot)antdesign\0.18.3\buildTransitive\AntDesign.props')" />
   </ImportGroup>
 </Project>

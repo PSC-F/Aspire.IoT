@@ -134,9 +134,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AntDesign": {
+              "target": "Package",
+              "version": "[0.18.3, )"
+            },
             "Aspire.StackExchange.Redis.OutputCaching": {
               "target": "Package",
               "version": "[8.0.0-preview.5.24201.12, )"
+            },
+            "Microsoft.AspNetCore.ResponseCompression": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.24172.13, )"
             }
           },
           "imports": [

@@ -57,3 +57,4 @@ C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\D
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ZhangPengFei.IoT.AppHost.pdb
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ZhangPengFei.IoT.AppHost.genruntimeconfig.cache
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ref\ZhangPengFei.IoT.AppHost.dll
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_Hub.ProjectMetadata.g.cs
