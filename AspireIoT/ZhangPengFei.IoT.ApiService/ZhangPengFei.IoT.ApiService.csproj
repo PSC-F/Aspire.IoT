@@ -8,6 +8,25 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ZhangPengFei.IoT.ServiceDefaults\ZhangPengFei.IoT.ServiceDefaults.csproj" />
+    <PackageReference Include="Google.Protobuf" Version="3.26.1" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.62.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.62.0"/>
+    <Protobuf Include="Proto\message.proto" GrpcServices="Message" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EndPoints\DevicesEndPoints\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Proto\message.proto">
+      <GrpcServices>Message</GrpcServices>
+      <Access>Public</Access>
+      <ProtoCompile>True</ProtoCompile>
+      <CompileOutputs>True</CompileOutputs>
+      <OutputDir>obj\Debug\net8.0\</OutputDir>
+      <Generator>MSBuild:Compile</Generator>
+    </Protobuf>
   </ItemGroup>
 
 </Project>

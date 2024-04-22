@@ -28,7 +28,8 @@ class Program
         // 构造订阅请求
         var request = new SubscriptionRequest
         {
-            Topic = "/IoT/#" 
+            // 订阅所有IoT设备数据更新事件
+            Topic = "/IoT/devices/+/data" 
         };
 
         // 订阅消息并获取流

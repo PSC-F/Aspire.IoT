@@ -14,5 +14,9 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props')" />
+    <Import Project="$(NuGetPackageRoot)grpc.tools\2.62.0\build\Grpc.Tools.props" Condition="Exists('$(NuGetPackageRoot)grpc.tools\2.62.0\build\Grpc.Tools.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\doudo\.nuget\packages\grpc.tools\2.62.0</PkgGrpc_Tools>
+  </PropertyGroup>
 </Project>

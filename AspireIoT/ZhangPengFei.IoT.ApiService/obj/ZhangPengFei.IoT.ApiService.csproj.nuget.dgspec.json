@@ -44,6 +44,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.26.1, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.62.0, )"
+            },
+            "Grpc.Tools": {
+              "target": "Package",
+              "version": "[2.62.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
