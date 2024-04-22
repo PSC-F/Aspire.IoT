@@ -4,16 +4,21 @@ namespace ZhangPengFei.IoT.ApiService.EndPoints.DevicesEndPoints;
 
 public static class DeviceRegisterEndPoint
 {
+    /// <summary>
+    /// 动态订阅
+    /// </summary>
+    /// <param name="app"></param>
     public static void MapDeviceRegisterEndPoint(this WebApplication app)
     {
         var api = app.MapGroup("/api");
         var productApi = api.MapGroup("/device").WithGroupName("设备注册");
-        productApi.MapGet("/Register", (DeviceService service) =>
+        productApi.MapGet("/register", (DeviceService service) =>
         {
-            if (service.RegisterDevice())
+            if (service.RegisterDevice(out string deviceId))
             {
-                return Results.Ok();
+                return Results.Json(new { DeviceId = deviceId });
             }
+
             return Results.BadRequest();
         });
     }

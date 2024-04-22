@@ -1,10 +1,11 @@
 using ZhangPengFei.IoT.ApiService.EndPoints.DevicesEndPoints;
+using ZhangPengFei.IoT.ApiService.EndPoints.DevicesEndPoints.Services;
 
-var builder = WebApplication.CreateBuilder(args);
-
+var builder = WebApplication.CreateSlimBuilder();
+builder.Services.AddCors();
 // Add service defaults & Aspire components.
 builder.AddServiceDefaults();
-
+builder.Services.AddTransient<DeviceService>();
 // Add services to the container.
 builder.Services.AddProblemDetails();
 
@@ -14,6 +15,7 @@ app.UseCors(
 // Configure the HTTP request pipeline.
 app.UseExceptionHandler();
 // 设备注册
+
 app.MapDeviceRegisterEndPoint();
 
 app.MapDefaultEndpoints();

@@ -9,10 +9,14 @@ public class DeviceService
     ///  注册设备
     /// </summary>
     /// <returns></returns>
-    public bool RegisterDevice()
+    public bool RegisterDevice(out string deviceId)
     {
+        deviceId = string.Empty;
         try
         {
+            deviceId = GenerateDevicesId();
+            var topic = $"/IoT/devices/{deviceId}/data";
+            Console.WriteLine($"SUB {topic} ");
             // gRPC 服务的地址
             var grpcAddress = "https://localhost:5029";
             // 创建 gRPC 通道
@@ -23,7 +27,7 @@ public class DeviceService
             var request = new SubscriptionRequest
             {
                 // 订阅所有IoT设备数据更新事件
-                Topic = $"/IoT/devices/{GenerateDevicesId()}/data"
+                Topic = topic
             };
             client.SubscribeToTopic(request);
             return true;

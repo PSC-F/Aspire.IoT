@@ -10,6 +10,7 @@ public class DataHub: Microsoft.AspNetCore.SignalR.Hub
     {
         Console.WriteLine(topic);
         Console.WriteLine(message);
+        
         await Clients.All.SendAsync("ReceiveMessage", topic, message);
     }
     
