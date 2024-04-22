@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangPengFei.IoT.InitGateWa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangPengFei.IoT.Hub", "ZhangPengFei.IoT.Hub\ZhangPengFei.IoT.Hub.csproj", "{2E16D018-9ACA-421B-B62C-F22E31A97DCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangPengFei.IoT.Common", "ZhangPengFei.IoT.Common\ZhangPengFei.IoT.Common.csproj", "{530242D6-BC1F-41B6-9758-8AD259DBBC57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{2E16D018-9ACA-421B-B62C-F22E31A97DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E16D018-9ACA-421B-B62C-F22E31A97DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E16D018-9ACA-421B-B62C-F22E31A97DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

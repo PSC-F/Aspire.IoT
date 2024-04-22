@@ -29,6 +29,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Common\\ZhangPengFei.IoT.Common.csproj": {
+                "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Common\\ZhangPengFei.IoT.Common.csproj"
+              },
               "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj": {
                 "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj"
               }
@@ -73,6 +76,68 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Common\\ZhangPengFei.IoT.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Common\\ZhangPengFei.IoT.Common.csproj",
+        "projectName": "ZhangPengFei.IoT.Common",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Common\\ZhangPengFei.IoT.Common.csproj",
+        "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "SqlSugarCore": {
+              "target": "Package",
+              "version": "[5.1.4.153-preview23, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

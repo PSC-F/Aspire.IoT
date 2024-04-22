@@ -23,7 +23,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZhangPengFei.IoT.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef79f5f2699be4b80320f850f3aac9ee3c0f9bac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0df4773f019ad83aa18ac0102d0e96638ca1398d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZhangPengFei.IoT.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZhangPengFei.IoT.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
