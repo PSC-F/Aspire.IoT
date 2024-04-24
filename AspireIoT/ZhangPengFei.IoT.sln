@@ -8,23 +8,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.ServiceDef
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.ApiService", "ZhangPengFei.IoT.ApiService\ZhangPengFei.IoT.ApiService.csproj", "{6FA49B95-ABEE-402C-9F44-807F510741E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.Web", "ZhangPengFei.IoT.Web\ZhangPengFei.IoT.Web.csproj", "{2CFC6305-3961-44BD-82FA-E72B753539FE}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.Tests", "ZhangPengFei.IoT.Tests\ZhangPengFei.IoT.Tests.csproj", "{F03ED291-BB7A-493B-90D7-A6EE6806B8DA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.MQ", "ZhangPengFei.IoT.MQ\ZhangPengFei.IoT.MQ.csproj", "{8D77092A-76DC-41AA-9044-A699F15F3C68}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.GateWay.AppHost", "ZhangPengFei.IoT.GateWay\ZhangPengFei.IoT.GateWay.AppHost\ZhangPengFei.IoT.GateWay.AppHost.csproj", "{037162C6-F800-4436-A5BA-C673983D8000}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.GateWay.ServiceDefaults", "ZhangPengFei.IoT.GateWay\ZhangPengFei.IoT.GateWay.ServiceDefaults\ZhangPengFei.IoT.GateWay.ServiceDefaults.csproj", "{7DA25F2D-6401-4072-BD9F-AF29F85D9174}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhangPengFei.IoT.SSOService", "ZhangPengFei.IoT.AuthService\ZhangPengFei.IoT.SSOService.csproj", "{B86850D6-5C72-4E3A-BCE9-0E9E673B045B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangPengFei.IoT.InitGateWayService", "ZhangPengFei.IoT.InitService\ZhangPengFei.IoT.InitGateWayService.csproj", "{20ED88FC-1442-4D7A-80B4-012F874AD1A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangPengFei.IoT.Hub", "ZhangPengFei.IoT.Hub\ZhangPengFei.IoT.Hub.csproj", "{2E16D018-9ACA-421B-B62C-F22E31A97DCA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangPengFei.IoT.Common", "ZhangPengFei.IoT.Common\ZhangPengFei.IoT.Common.csproj", "{530242D6-BC1F-41B6-9758-8AD259DBBC57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +34,6 @@ Global
 		{6FA49B95-ABEE-402C-9F44-807F510741E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FA49B95-ABEE-402C-9F44-807F510741E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FA49B95-ABEE-402C-9F44-807F510741E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CFC6305-3961-44BD-82FA-E72B753539FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CFC6305-3961-44BD-82FA-E72B753539FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CFC6305-3961-44BD-82FA-E72B753539FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CFC6305-3961-44BD-82FA-E72B753539FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F03ED291-BB7A-493B-90D7-A6EE6806B8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F03ED291-BB7A-493B-90D7-A6EE6806B8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F03ED291-BB7A-493B-90D7-A6EE6806B8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -56,18 +42,6 @@ Global
 		{8D77092A-76DC-41AA-9044-A699F15F3C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D77092A-76DC-41AA-9044-A699F15F3C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D77092A-76DC-41AA-9044-A699F15F3C68}.Release|Any CPU.Build.0 = Release|Any CPU
-		{037162C6-F800-4436-A5BA-C673983D8000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{037162C6-F800-4436-A5BA-C673983D8000}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{037162C6-F800-4436-A5BA-C673983D8000}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{037162C6-F800-4436-A5BA-C673983D8000}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DA25F2D-6401-4072-BD9F-AF29F85D9174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DA25F2D-6401-4072-BD9F-AF29F85D9174}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DA25F2D-6401-4072-BD9F-AF29F85D9174}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DA25F2D-6401-4072-BD9F-AF29F85D9174}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B86850D6-5C72-4E3A-BCE9-0E9E673B045B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B86850D6-5C72-4E3A-BCE9-0E9E673B045B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B86850D6-5C72-4E3A-BCE9-0E9E673B045B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B86850D6-5C72-4E3A-BCE9-0E9E673B045B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20ED88FC-1442-4D7A-80B4-012F874AD1A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20ED88FC-1442-4D7A-80B4-012F874AD1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20ED88FC-1442-4D7A-80B4-012F874AD1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -76,10 +50,6 @@ Global
 		{2E16D018-9ACA-421B-B62C-F22E31A97DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E16D018-9ACA-421B-B62C-F22E31A97DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E16D018-9ACA-421B-B62C-F22E31A97DCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{530242D6-BC1F-41B6-9758-8AD259DBBC57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

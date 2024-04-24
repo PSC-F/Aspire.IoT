@@ -35,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -42,6 +47,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Aspire.Hosting.AppHost": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.24201.12, )"
+            },
+            "Aspire.Hosting.MySql": {
               "target": "Package",
               "version": "[8.0.0-preview.5.24201.12, )"
             },

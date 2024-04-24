@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ZhangPengFei.IoT.ApiService\ZhangPengFei.IoT.ApiService.csproj" />
-    <ProjectReference Include="..\ZhangPengFei.IoT.AuthService\ZhangPengFei.IoT.SSOService.csproj" />
     <ProjectReference Include="..\ZhangPengFei.IoT.Hub\ZhangPengFei.IoT.Hub.csproj" />
     <ProjectReference Include="..\ZhangPengFei.IoT.InitService\ZhangPengFei.IoT.InitGateWayService.csproj" />
     <ProjectReference Include="..\ZhangPengFei.IoT.MQ\ZhangPengFei.IoT.MQ.csproj" />
@@ -20,6 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.MySql" Version="8.0.0-preview.5.24201.12" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0-preview.5.24201.12" />
   </ItemGroup>
 

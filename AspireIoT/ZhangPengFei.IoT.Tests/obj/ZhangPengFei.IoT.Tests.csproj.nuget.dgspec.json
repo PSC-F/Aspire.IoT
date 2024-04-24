@@ -4,6 +4,104 @@
     "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.Tests\\ZhangPengFei.IoT.Tests.csproj": {}
   },
   "projects": {
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj",
+        "projectName": "ZhangPengFei.IoT.ApiService",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj",
+        "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj": {
+                "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Aspire.MySqlConnector": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.24201.12, )"
+            },
+            "Aspire.StackExchange.Redis": {
+              "target": "Package",
+              "version": "[8.0.0-preview.6.24214.1, )"
+            },
+            "Aspire.StackExchange.Redis.DistributedCaching": {
+              "target": "Package",
+              "version": "[8.0.0-preview.6.24214.1, )"
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.26.1, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.62.0, )"
+            },
+            "Grpc.Tools": {
+              "target": "Package",
+              "version": "[2.62.0, )"
+            },
+            "SqlSugarCore": {
+              "target": "Package",
+              "version": "[5.1.4.153-preview26, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AppHost\\ZhangPengFei.IoT.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -35,6 +133,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -42,6 +145,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Aspire.Hosting.AppHost": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.24201.12, )"
+            },
+            "Aspire.Hosting.MySql": {
               "target": "Package",
               "version": "[8.0.0-preview.5.24201.12, )"
             },
@@ -62,6 +169,100 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
+        "projectName": "ZhangPengFei.IoT.ServiceDefaults",
+        "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\ZhangPengFei.IoT.ServiceDefaults.csproj",
+        "packagesPath": "C:\\Users\\doudo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ServiceDefaults\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\doudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Http.Resilience": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "Microsoft.Extensions.ServiceDiscovery": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.24201.12, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "OpenTelemetry.Instrumentation.Runtime": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -95,6 +296,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj": {
+                "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.ApiService\\ZhangPengFei.IoT.ApiService.csproj"
+              },
               "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AppHost\\ZhangPengFei.IoT.AppHost.csproj": {
                 "projectPath": "C:\\Users\\doudo\\RiderProjects\\Aspire.IoT\\AspireIoT\\ZhangPengFei.IoT.AppHost\\ZhangPengFei.IoT.AppHost.csproj"
               }
@@ -105,6 +309,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

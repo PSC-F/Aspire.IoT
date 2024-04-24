@@ -20,13 +20,12 @@ public class MessageService : ZhangPengFei.IoT.MQ.Common.MessageService.MessageS
     {
         try
         {
-           
             var message = new MqttApplicationMessageBuilder()
-          .WithTopic(request.Topic)
-          .WithPayload(request.Value)
-          .WithQualityOfServiceLevel((MqttQualityOfServiceLevel)request.Level)
-          .WithRetainFlag()
-          .Build();
+                .WithTopic(request.Topic)
+                .WithPayload(request.Value)
+                .WithQualityOfServiceLevel((MqttQualityOfServiceLevel)request.Level)
+                .WithRetainFlag()
+                .Build();
 
             await _mqttClient.PublishAsync(message);
 
@@ -35,20 +34,21 @@ public class MessageService : ZhangPengFei.IoT.MQ.Common.MessageService.MessageS
             return new PublishResponse
             {
                 Result = $"Message published successfully. TimeStamp: {request.Timestamp}",
-
             };
         }
         catch (Exception e)
         {
-
             Console.WriteLine(e);
-            return null;
         }
 
-
-
+        return new PublishResponse
+        {
+            Result = $"{request.Timestamp}",
+        };
     }
-    public override async Task SubscribeToTopic(SubscriptionRequest request, IServerStreamWriter<NormalMessage> responseStream, ServerCallContext context)
+
+    public override async Task SubscribeToTopic(SubscriptionRequest request,
+        IServerStreamWriter<NormalMessage> responseStream, ServerCallContext context)
     {
         try
         {
@@ -61,7 +61,6 @@ public class MessageService : ZhangPengFei.IoT.MQ.Common.MessageService.MessageS
             // 处理接收到的 MQTT 消息，并通过 gRPC 回调给客户端
             _mqttClient.ApplicationMessageReceivedAsync += async (e) =>
             {
-
                 await responseStream.WriteAsync(new NormalMessage
                 {
                     Topic = e.ApplicationMessage.Topic,
@@ -72,20 +71,13 @@ public class MessageService : ZhangPengFei.IoT.MQ.Common.MessageService.MessageS
 
 
             // 等待取消订阅信号
-            await Task.Run(() =>
-            {
-                context.CancellationToken.WaitHandle.WaitOne();
-            });
+            await Task.Run(() => { context.CancellationToken.WaitHandle.WaitOne(); });
             // 取消订阅 MQTT 主题
             await _mqttClient.UnsubscribeAsync(request.Topic);
         }
         catch (Exception e)
         {
-
-          Console.WriteLine(e);
+            Console.WriteLine(e);
         }
-       
     }
-
-
 }

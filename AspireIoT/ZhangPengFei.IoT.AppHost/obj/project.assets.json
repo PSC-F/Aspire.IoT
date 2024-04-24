@@ -86,6 +86,22 @@
           "buildMultiTargeting/Aspire.Hosting.AppHost.targets": {}
         }
       },
+      "Aspire.Hosting.MySql/8.0.0-preview.5.24201.12": {
+        "type": "package",
+        "dependencies": {
+          "Aspire.Hosting": "8.0.0-preview.5.24201.12"
+        },
+        "compile": {
+          "lib/net8.0/Aspire.Hosting.MySql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.MySql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Aspire.Hosting.Redis/8.0.0-preview.5.24201.12": {
         "type": "package",
         "dependencies": {
@@ -1192,6 +1208,21 @@
         "buildTransitive/Aspire.Hosting.AppHost.targets",
         "lib/net8.0/Aspire.Hosting.AppHost.dll",
         "lib/net8.0/Aspire.Hosting.AppHost.xml"
+      ]
+    },
+    "Aspire.Hosting.MySql/8.0.0-preview.5.24201.12": {
+      "sha512": "yx/Jz071s1o8RvNoBfzt89XvrvwVLeMXqFEALj2E1Di1m13E/9d/qm3brThUlh2gPkhZ8g/coD7DoRr6K932Kg==",
+      "type": "package",
+      "path": "aspire.hosting.mysql/8.0.0-preview.5.24201.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "aspire.hosting.mysql.8.0.0-preview.5.24201.12.nupkg.sha512",
+        "aspire.hosting.mysql.nuspec",
+        "lib/net8.0/Aspire.Hosting.MySql.dll",
+        "lib/net8.0/Aspire.Hosting.MySql.xml"
       ]
     },
     "Aspire.Hosting.Redis/8.0.0-preview.5.24201.12": {
@@ -2891,6 +2922,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Aspire.Hosting.AppHost >= 8.0.0-preview.5.24201.12",
+      "Aspire.Hosting.MySql >= 8.0.0-preview.5.24201.12",
       "Aspire.Hosting.Redis >= 8.0.0-preview.5.24201.12"
     ]
   },
@@ -2928,6 +2960,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2935,6 +2972,10 @@
         "targetAlias": "net8.0",
         "dependencies": {
           "Aspire.Hosting.AppHost": {
+            "target": "Package",
+            "version": "[8.0.0-preview.5.24201.12, )"
+          },
+          "Aspire.Hosting.MySql": {
             "target": "Package",
             "version": "[8.0.0-preview.5.24201.12, )"
           },

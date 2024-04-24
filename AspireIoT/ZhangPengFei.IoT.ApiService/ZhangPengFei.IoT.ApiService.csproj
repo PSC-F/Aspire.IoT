@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ZhangPengFei.IoT.Common\ZhangPengFei.IoT.Common.csproj" />
-    <ProjectReference Include="..\ZhangPengFei.IoT.ServiceDefaults\ZhangPengFei.IoT.ServiceDefaults.csproj" />
+    <PackageReference Include="Aspire.StackExchange.Redis" Version="8.0.0-preview.6.24214.1" />
+    <PackageReference Include="Aspire.StackExchange.Redis.DistributedCaching" Version="8.0.0-preview.6.24214.1" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.4.153-preview26" />
+  
+    <PackageReference Include="Aspire.MySqlConnector" Version="8.0.0-preview.5.24201.12" />
     <PackageReference Include="Google.Protobuf" Version="3.26.1" />
     <PackageReference Include="Grpc.Net.Client" Version="2.62.0" />
     <PackageReference Include="Grpc.Tools" Version="2.62.0"/>
-    <Protobuf Include="Proto\message.proto" GrpcServices="Message" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,13 +23,17 @@
 
   <ItemGroup>
     <Protobuf Include="Proto\message.proto">
-      <GrpcServices>Message</GrpcServices>
+      <GrpcServices>Both</GrpcServices>
       <Access>Public</Access>
       <ProtoCompile>True</ProtoCompile>
       <CompileOutputs>True</CompileOutputs>
       <OutputDir>obj\Debug\net8.0\</OutputDir>
       <Generator>MSBuild:Compile</Generator>
     </Protobuf>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZhangPengFei.IoT.ServiceDefaults\ZhangPengFei.IoT.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

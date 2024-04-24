@@ -5,6 +5,7 @@ C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\D
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\Debug\net8.0\ZhangPengFei.IoT.AppHost.pdb
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\Debug\net8.0\Aspire.Hosting.dll
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\Debug\net8.0\Aspire.Hosting.AppHost.dll
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\Debug\net8.0\Aspire.Hosting.MySql.dll
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\Debug\net8.0\Aspire.Hosting.Redis.dll
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\Debug\net8.0\Fractions.dll
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\bin\Debug\net8.0\Google.Protobuf.dll
@@ -45,7 +46,7 @@ C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\D
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ZhangPengFei.IoT.AppHost.AssemblyInfo.cs
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ZhangPengFei.IoT.AppHost.csproj.CoreCompileInputs.cache
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_ApiService.ProjectMetadata.g.cs
-C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_SSOService.ProjectMetadata.g.cs
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_Hub.ProjectMetadata.g.cs
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_InitGateWayService.ProjectMetadata.g.cs
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_MQ.ProjectMetadata.g.cs
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_Web.ProjectMetadata.g.cs
@@ -57,4 +58,3 @@ C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\D
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ZhangPengFei.IoT.AppHost.pdb
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ZhangPengFei.IoT.AppHost.genruntimeconfig.cache
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\ref\ZhangPengFei.IoT.AppHost.dll
-C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.AppHost\obj\Debug\net8.0\Aspire\references\ZhangPengFei_IoT_Hub.ProjectMetadata.g.cs

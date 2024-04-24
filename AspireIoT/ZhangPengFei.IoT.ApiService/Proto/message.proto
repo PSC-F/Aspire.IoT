@@ -6,7 +6,7 @@ service MessageService {
 
     rpc PublishMessage (NormalMessage) returns (PublishResponse);
 
-     rpc SubscribeToTopic(SubscriptionRequest) returns (stream NormalMessage) {}
+    rpc SubscribeToTopic(SubscriptionRequest) returns (stream NormalMessage) {}
 }
 
 

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ZhangPengFei.IoT.ApiService\ZhangPengFei.IoT.ApiService.csproj" />
     <ProjectReference Include="..\ZhangPengFei.IoT.AppHost\ZhangPengFei.IoT.AppHost.csproj" />
   </ItemGroup>
 
