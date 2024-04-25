@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ZhangPengFei.IoT.Hub.props" />
+</Project>

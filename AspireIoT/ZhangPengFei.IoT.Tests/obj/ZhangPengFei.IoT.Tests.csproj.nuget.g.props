@@ -25,6 +25,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_VisualStudio_SlnGen Condition=" '$(PkgMicrosoft_VisualStudio_SlnGen)' == '' ">C:\Users\doudo\.nuget\packages\microsoft.visualstudio.slngen\11.1.0</PkgMicrosoft_VisualStudio_SlnGen>
     <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\doudo\.nuget\packages\grpc.tools\2.62.0</PkgGrpc_Tools>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\doudo\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\doudo\.nuget\packages\xunit.analyzers\1.4.0</Pkgxunit_analyzers>
   </PropertyGroup>
 </Project>

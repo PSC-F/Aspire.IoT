@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ZhangPengFei.IoT.MQ.props" />
+</Project>

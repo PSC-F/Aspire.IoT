@@ -1,6 +1,6 @@
 using System.Net;
 using System.Text;
-using ZhangPengFei.IoT.ApiService.EndPoints.GateWayEndPoints.Model;
+using ZhangPengFei.IoT.ApiService.Model;
 
 namespace ZhangPengFei.IoT.Tests;
 

@@ -19,4 +19,8 @@
  
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ZhangPengFei.IoT.ServiceDefaults\ZhangPengFei.IoT.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>

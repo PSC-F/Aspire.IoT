@@ -7,7 +7,8 @@ string username = "";
 string password = "";
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.AddServiceDefaults();
+builder.Services.AddProblemDetails();
 builder.Services.AddGrpc(); // Ìí¼Ó gRPC ·þÎñÅäÖÃ
 
 builder.Services.AddMqttClient(option =>

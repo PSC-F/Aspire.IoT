@@ -1,7 +1,7 @@
 ﻿using MySqlConnector;
 using SqlSugar;
 using ZhangPengFei.IoT.ApiService.DataBase;
-using ZhangPengFei.IoT.ApiService.EndPoints.GateWayEndPoints.Model;
+using ZhangPengFei.IoT.ApiService.Model;
 
 
 namespace ZhangPengFei.IoT.ApiService.EndPoints.GateWayEndPoints.Services;
@@ -9,19 +9,20 @@ namespace ZhangPengFei.IoT.ApiService.EndPoints.GateWayEndPoints.Services;
 public class GateWayService(MySqlDataSource dataSource)
 {
     private SimpleClient<GateWay> _gateRepository =
-        new DataBaseManager(dataSource).BuildWithMySQL().GetSimpleClient<Model.GateWay>();
+        new DataBaseManager(dataSource).BuildWithMySQL().GetSimpleClient<GateWay>();
 
-    public async Task<bool> AddGateWayAsync(Model.GateWay gateWay)
+    public async Task<bool> AddGateWayAsync(GateWay gateWay)
     {
         return await _gateRepository.InsertOrUpdateAsync(gateWay);
     }
 
-    public async Task<List<Model.GateWay>> ListGateWayAsync()
+    public async Task<List<GateWay>> ListGateWayAsync()
     {
+     
         return await _gateRepository.GetListAsync();
     }
 
-    public async Task<bool> DeleteGateWayAsync(Model.GateWay gateWay)
+    public async Task<bool> DeleteGateWayAsync(GateWay gateWay)
     {
         return await _gateRepository.DeleteAsync(gateWay);
     }

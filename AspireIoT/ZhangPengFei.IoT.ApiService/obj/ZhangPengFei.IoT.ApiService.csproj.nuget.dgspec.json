@@ -74,9 +74,17 @@
               "target": "Package",
               "version": "[2.62.0, )"
             },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "SqlSugarCore": {
               "target": "Package",
-              "version": "[5.1.4.153-preview26, )"
+              "version": "[5.1.4.152, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [

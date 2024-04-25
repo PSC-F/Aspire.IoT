@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using ZhangPengFei.IoT.ApiService.EndPoints.GateWayEndPoints.Model;
 using StackExchange.Redis;
 using ZhangPengFei.IoT.ApiService.EndPoints.GateWayEndPoints.Services;
+using ZhangPengFei.IoT.ApiService.Model;
 
 
 namespace ZhangPengFei.IoT.ApiService.EndPoints.GateWayEndPoints;
@@ -27,7 +27,7 @@ public static class GateWayEndPoint
                     }
 
                     return Results.BadRequest();
-                });
+                }).WithOpenApi();;
         }
         catch (Exception e)
         {
@@ -39,34 +39,39 @@ public static class GateWayEndPoint
     {
         var api = app.MapGroup("/api");
         var productApi = api.MapGroup("/gateway").WithGroupName("删除网关");
-        productApi.MapPost("/delete", async (GateWayService service, [FromBody] GateWay gateWay) =>
-        {
-            if (await service.DeleteGateWayAsync(gateWay))
+        productApi.MapPost("/delete",
+            async (GateWayService service, IConnectionMultiplexer redis, [FromBody] GateWay gateWay) =>
             {
-                return Results.Json(new { GateWayId = gateWay.Id });
-            }
+                if (await service.DeleteGateWayAsync(gateWay))
+                {
+                    await redis.GetDatabase()
+                        .SetRemoveAsync((RedisKey)"GateWaySet", System.Text.Json.JsonSerializer.Serialize(gateWay));
+                    return Results.Json(new { GateWayId = gateWay.Id });
+                }
 
-            return Results.BadRequest();
-        });
+                return Results.BadRequest();
+            }).WithOpenApi();;
     }
 
     public static void MapGetGateWaysEndPoint(this WebApplication app)
     {
         var api = app.MapGroup("/api");
-        var productApi = api.MapGroup("/gateway").WithGroupName("获取网关列表");
+        var productApi = api.MapGroup("/gateway").WithGroupName("获取网关列表").WithOpenApi();
         productApi.MapGet("/list",
-            async (GateWayService service, IConnectionMultiplexer redis) =>
+             async (GateWayService service, IConnectionMultiplexer redis) =>
             {
                 if (await redis.GetDatabase().SetLengthAsync((RedisKey)"GateWaySet") > 0)
                 {
-                    List<GateWay?> gateways = (await redis.GetDatabase().SetMembersAsync((RedisKey)"GateWaySet"))
+                    Console.WriteLine("***Cache");
+                    List<GateWay?> gateways = ( await redis.GetDatabase().SetMembersAsync((RedisKey)"GateWaySet"))
                         .Select(member => System.Text.Json.JsonSerializer.Deserialize<GateWay>(member.ToString()))
                         .ToList();
                     return Results.Json(
                         new { data = gateways });
                 }
-
-                return Results.Json(new { data = await service.ListGateWayAsync() });
+                Console.WriteLine("***SQL");
+                return Results.Json(new { data =  service.ListGateWayAsync() });
             });
+  
     }
 }
