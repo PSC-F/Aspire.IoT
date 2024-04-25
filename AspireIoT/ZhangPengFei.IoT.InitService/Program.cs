@@ -1,21 +1,20 @@
 ﻿using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.AspNetCore.SignalR.Client;
-using ZhangPengFei.IoT.InitService.Common;
 using ZhangPengFei.IoT.MQ.Common;
 
 class Program
 {
     static async Task Main(string[] args)
     {
-        
+      
         // 连接到 SignalR Hub
         var connection = new HubConnectionBuilder()
             .WithUrl("http://localhost:5231/DataHub") // 替换为你的 SignalR Hub 地址
             .Build();
         await connection.StartAsync();
 
-        
+
         // gRPC 服务的地址
         var grpcAddress = "https://localhost:5029";
 
@@ -29,7 +28,7 @@ class Program
         var request = new SubscriptionRequest
         {
             // 订阅所有IoT设备数据更新事件
-            Topic = "/IoT/devices/+/data" 
+            Topic = "/IoT/devices/+/data"
         };
 
         // 订阅消息并获取流
@@ -39,11 +38,12 @@ class Program
         while (await stream.ResponseStream.MoveNext())
         {
             var message = stream.ResponseStream.Current;
-            Console.WriteLine($"Received message: [ Topic:{message.Topic} | Value:{message.Value} | Level:{message.Level} ] ");
+            Console.WriteLine(
+                $"Received message: [ Topic:{message.Topic} | Value:{message.Value} | Level:{message.Level} ] ");
             // 将消息推送到 SignalR Hub
             await connection.InvokeAsync("SendMessage", message.Topic, message.Value);
         }
-        
+
         Console.WriteLine("Subscription completed.");
     }
 }

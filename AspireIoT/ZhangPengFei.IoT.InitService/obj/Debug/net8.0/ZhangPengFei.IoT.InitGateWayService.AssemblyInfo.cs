@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZhangPengFei.IoT.InitGateWayService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e46e458cf49971520bc7b85df8713b4d74f91f1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+729a4794c71f9f7f92f9c3bc59ab31b9817a155f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZhangPengFei.IoT.InitGateWayService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZhangPengFei.IoT.InitGateWayService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

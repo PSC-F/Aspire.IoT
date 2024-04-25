@@ -21,6 +21,7 @@ builder.AddProject<Projects.ZhangPengFei_IoT_Hub>("zhangpengfei-iot-hub-service"
 // builder.AddProject<Projects.ZhangPengFei_IoT_SSOService>("zhangpengfei-iot-sso-service")
 //     .WithReference(redis);
 // ³õÊ¼»¯Íø¹Ø
-builder.AddProject<Projects.ZhangPengFei_IoT_InitGateWayService>("zhangpengfei-iot-initgateway-service");
+builder.AddProject<Projects.ZhangPengFei_IoT_InitGateWayService>("zhangpengfei-iot-initgateway-service")
+    .WithReference(mysqldb);
 
 builder.Build().Run();

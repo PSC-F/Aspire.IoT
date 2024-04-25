@@ -1,11 +1,14 @@
-﻿using MySqlConnector;
+﻿using System.Reflection;
+using MySqlConnector;
 using SqlSugar;
-
+using ZhangPengFei.IoT.ApiService.Model;
 
 namespace ZhangPengFei.IoT.ApiService.DataBase;
 
 public class DataBaseManager(MySqlDataSource dataSource)
 {
+    private static int initialized = 0;
+
     /// <summary>
     /// 创建MySQL驱动
     /// </summary>
@@ -18,23 +21,30 @@ public class DataBaseManager(MySqlDataSource dataSource)
             {
                 ConnectionString = dataSource.ConnectionString,
                 DbType = DbType.MySql,
-                IsAutoCloseConnection = true
+                IsAutoCloseConnection = false
             },
             db =>
             {
                 db.Aop.OnLogExecuting = (sql, pars) =>
                 {
                     //获取原生SQL推荐 5.1.4.63  性能OK
-                    Console.WriteLine(UtilMethods.GetNativeSql(sql, pars));
+                    // Console.WriteLine(UtilMethods.GetNativeSql(sql, pars));
 
                     //获取无参数化SQL 对性能有影响，特别大的SQL参数多的，调试使用
                     //Console.WriteLine(UtilMethods.GetSqlString(DbType.SqlServer,sql,pars))
                 };
                 //注意多租户 有几个设置几个
                 //db.GetConnection(i).Aop
+                if (Interlocked.CompareExchange(ref initialized, 1, 0) == 0)
+                {
+                    db.DbMaintenance.CreateDatabase();
+                    Type[] types = typeof(GateWay).Assembly.GetTypes()
+                        .Where(it => it.FullName.Contains("ZhangPengFei.IoT.ApiService.Model.")).ToArray();
+                    db.CodeFirst.InitTables(types);
+                }
             });
-        Db.DbMaintenance.CreateDatabase();
-        Db.CodeFirst.InitTables<EndPoints.GateWayEndPoints.Model.GateWay>();
+
+
         return Db;
     }
 }

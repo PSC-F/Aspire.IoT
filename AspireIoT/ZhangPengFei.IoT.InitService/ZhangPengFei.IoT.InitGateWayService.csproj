@@ -16,6 +16,7 @@
 		</PackageReference>
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.0-preview.3.24172.13" />
 		<Protobuf Include="Proto\message.proto" GrpcServices="Message" />
-
+		<PackageReference Include="SqlSugarCore" Version="5.1.4.152" />
+		<PackageReference Include="Aspire.MySqlConnector" Version="8.0.0-preview.5.24201.12" />
 	</ItemGroup>
 </Project>

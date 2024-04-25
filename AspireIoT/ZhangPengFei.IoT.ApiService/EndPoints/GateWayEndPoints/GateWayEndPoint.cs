@@ -27,7 +27,8 @@ public static class GateWayEndPoint
                     }
 
                     return Results.BadRequest();
-                }).WithOpenApi();;
+                }).WithOpenApi();
+            ;
         }
         catch (Exception e)
         {
@@ -50,7 +51,8 @@ public static class GateWayEndPoint
                 }
 
                 return Results.BadRequest();
-            }).WithOpenApi();;
+            }).WithOpenApi();
+        ;
     }
 
     public static void MapGetGateWaysEndPoint(this WebApplication app)
@@ -72,6 +74,24 @@ public static class GateWayEndPoint
                 Console.WriteLine("***SQL");
                 return Results.Json(new { data =  service.ListGateWayAsync() });
             });
-  
+        // var api = app.MapGroup("/api");
+        // var productApi = api.MapGroup("/gateway").WithGroupName("获取网关列表").WithOpenApi();
+        // productApi.MapGet("/list",
+        //     async (IConnectionMultiplexer redis) =>
+        //     {
+        //         if (await redis.GetDatabase().SetLengthAsync((RedisKey)"GateWaySet") > 0)
+        //         {
+        //             Console.WriteLine("***Cache");
+        //             List<GateWay?> gateways = (await redis.GetDatabase().SetMembersAsync((RedisKey)"GateWaySet"))
+        //                 .Select(member => System.Text.Json.JsonSerializer.Deserialize<GateWay>(member.ToString()))
+        //                 .ToList();
+        //             return Results.Json(
+        //                 new { data = gateways });
+        //         }
+        //
+        //         return Results.Json(new { data = "404" });
+        //         // Console.WriteLine("***SQL");
+        //         // return Results.Json(new { data =  service.ListGateWayAsync() });
+            // });
     }
 }

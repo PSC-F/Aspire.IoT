@@ -67,3 +67,5 @@ C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.MQ\obj\Debug\
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.MQ\obj\Debug\net8.0\ZhangPengFei.IoT.MQ.pdb
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.MQ\obj\Debug\net8.0\ZhangPengFei.IoT.MQ.genruntimeconfig.cache
 C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.MQ\obj\Debug\net8.0\ref\ZhangPengFei.IoT.MQ.dll
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.MQ\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\doudo\RiderProjects\Aspire.IoT\AspireIoT\ZhangPengFei.IoT.MQ\bin\Debug\net8.0\System.Text.Json.dll
