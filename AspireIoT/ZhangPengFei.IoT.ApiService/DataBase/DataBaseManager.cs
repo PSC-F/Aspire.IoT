@@ -33,8 +33,7 @@ public class DataBaseManager(MySqlDataSource dataSource)
                     //获取无参数化SQL 对性能有影响，特别大的SQL参数多的，调试使用
                     //Console.WriteLine(UtilMethods.GetSqlString(DbType.SqlServer,sql,pars))
                 };
-                //注意多租户 有几个设置几个
-                //db.GetConnection(i).Aop
+           
                 if (Interlocked.CompareExchange(ref initialized, 1, 0) == 0)
                 {
                     db.DbMaintenance.CreateDatabase();
