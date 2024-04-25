@@ -1,5 +1,5 @@
 <a name="GXrzo"></a>
-## 🎯项目
+# 🎯项目
 > [!NOTE]
 > 使用最新.NET Aspire构建现代化高性能分布式IoT平台、边缘计算网关
 
@@ -14,12 +14,12 @@
 > * 分布式日志：ClickHouse
 > * 遥测：Open Telemetry
 <a name="GXrzo"></a>
-## 🌊资料
+# 🌊资料
 > [!TIP]
 > IoT OpenAPI文档 [Aspire.IoT ApiFox document](https://buy8bcfn6d.apifox.cn/)).
 
 <a name="sKxNP"></a>
-## 🎶计划
+# 🎶计划
 > 总览
 
 ![](https://cdn.nlark.com/yuque/0/2024/jpeg/35802242/1713682975601-2f97df4b-4f56-4a20-850c-6dbeac04a1ee.jpeg)
