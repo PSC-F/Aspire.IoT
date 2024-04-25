@@ -9,8 +9,10 @@
 > * 消息协议：MQTT、GRPC、SingalR
 > * ORM:      SqlSugar
 > * 数据库    ：MySQL、Redis
-> * 代理：Mosquitto
+> * Broker 代理：Mosquitto Cluster
 > * Docker: DockerDesktop
+> * 分布式日志：ClickHouse
+> * 遥测：Open Telemetry
 <a name="GXrzo"></a>
 ## 🌊资料
 > [!TIP]
