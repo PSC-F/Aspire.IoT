@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZhangPengFei.IoT.MQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+729a4794c71f9f7f92f9c3bc59ab31b9817a155f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36a16e3cff9b439523e2d6121cba69b5f0a8d697")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZhangPengFei.IoT.MQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZhangPengFei.IoT.MQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

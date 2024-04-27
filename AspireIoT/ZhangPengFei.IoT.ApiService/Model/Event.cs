@@ -17,6 +17,6 @@ public class Event
     [SugarColumn(IsIgnore = true)]
     [Description("关联属性标识")]
     public string? AttributeId { get; set; } // 存储用户选择的属性标识
-
+    [SugarColumn(IsIgnore = true)]
     [Description("关联命令标识")] public string? CommandId { get; set; } // 存储用户选择的命令标识
 }

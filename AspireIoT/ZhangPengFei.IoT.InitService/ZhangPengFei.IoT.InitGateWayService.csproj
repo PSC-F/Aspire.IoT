@@ -19,4 +19,7 @@
 		<PackageReference Include="SqlSugarCore" Version="5.1.4.152" />
 		<PackageReference Include="Aspire.MySqlConnector" Version="8.0.0-preview.5.24201.12" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\ZhangPengFei.IoT.RuleEngine\ZhangPengFei.IoT.RuleEngine.csproj" />
+	</ItemGroup>
 </Project>

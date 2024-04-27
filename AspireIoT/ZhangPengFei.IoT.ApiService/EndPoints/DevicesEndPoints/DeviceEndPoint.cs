@@ -21,11 +21,12 @@ public static class DeviceEndPoint
                     {
                         await redis.GetDatabase().SetAddAsync((RedisKey)"DevicesSet",
                             System.Text.Json.JsonSerializer.Serialize(device));
-                        return Results.Json(new { GateWayId = device.Id });
+                        return Results.Json(new { data = device.Id });
                     }
 
                     return Results.BadRequest();
-                }).WithOpenApi();;
+                }).WithOpenApi();
+            ;
         }
         catch (Exception e)
         {
@@ -44,23 +45,24 @@ public static class DeviceEndPoint
                 {
                     await redis.GetDatabase()
                         .SetRemoveAsync((RedisKey)"DevicesSet", System.Text.Json.JsonSerializer.Serialize(device));
-                    return Results.Json(new { GateWayId = device.Id });
+                    return Results.Json(new { data = device.Id });
                 }
 
                 return Results.BadRequest();
-            }).WithOpenApi();;
+            }).WithOpenApi();
+        ;
     }
 
     public static void MapGetDevicesEndPoint(this WebApplication app)
     {
         var api = app.MapGroup("/api");
-        var productApi = api.MapGroup("/device").WithGroupName("获取网关列表");
+        var productApi = api.MapGroup("/device").WithGroupName("获取设备列表");
         productApi.MapGet("/list",
             async (DeviceService service, IConnectionMultiplexer redis) =>
             {
                 if (await redis.GetDatabase().SetLengthAsync((RedisKey)"DevicesSet") > 0)
                 {
-                    List<Device?> devices = (await redis.GetDatabase().SetMembersAsync((RedisKey)"GateWaySet"))
+                    List<Device?> devices = (await redis.GetDatabase().SetMembersAsync((RedisKey)"DevicesSet"))
                         .Select(member => System.Text.Json.JsonSerializer.Deserialize<Device>(member.ToString()))
                         .ToList();
                     return Results.Json(
@@ -68,6 +70,7 @@ public static class DeviceEndPoint
                 }
 
                 return Results.Json(new { data = await service.ListDeviceAsync() });
-            }).WithOpenApi();;
+            }).WithOpenApi();
+        ;
     }
 }

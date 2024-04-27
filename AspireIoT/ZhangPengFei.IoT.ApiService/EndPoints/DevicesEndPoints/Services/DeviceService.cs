@@ -12,6 +12,7 @@ public class DeviceService(MySqlDataSource dataSource)
 
     public async Task<bool> AddDeviceAsync(Device device)
     {
+  
         return await _repository.InsertOrUpdateAsync(device);
     }
 
